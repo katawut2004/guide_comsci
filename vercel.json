@@ -1,14 +1,18 @@
 {
-    "builds": [
-      {
-        "src": "guide/wsgi.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "guide/wsgi.py"
-      }
-    ]
-  }
+  "builds": [
+    {
+      "src": "guide/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "guide/wsgi.py"
+    }
+  ]
+}
