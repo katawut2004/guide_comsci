@@ -1,13 +1,15 @@
 from django.urls import path
-from webpage.views import about, service, index, menu, booking, team, testimonial, contact
+from . import views
 
 urlpatterns = [
-    path("", index, name='index'),
-    path("about/", about, name='about'),
-    path("service/", service, name='service'),
-    path("menu/", menu, name='menu'),
-    path("booking/", booking, name='booking'),
-    path("our team/", team, name='team'),
-    path("testimonial/", testimonial, name='testimonial'),
-    path("contact/", contact, name='contact'),
+    path("", views.index, name='index'),
+    path("about/", views.about, name='about'),
+    path("service/", views.service, name='service'),
+    path("menu/", views.menu, name='menu'),
+    path("booking/", views.booking, name='booking'),
+    path("our team/", views.team, name='team'),
+    path("testimonial/", views.testimonial, name='testimonial'),
+    path("contact/", views.contact, name='contact'),
 ]
+
+

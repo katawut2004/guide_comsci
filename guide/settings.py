@@ -70,7 +70,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = "guide.wsgi.application"
+WSGI_APPLICATION = "guide.wsgi.app"
 
 
 # Database
