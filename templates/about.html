@@ -87,8 +87,8 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 pe-4">
               <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
-              <a href="{% url "about" %}" class="nav-item nav-link">About</a>
-              <a href="{% url "service" %}" class="nav-item nav-link">Service</a>
+              <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+              <a href="{% url 'service' %}" class="nav-item nav-link">Service</a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -98,15 +98,13 @@
                 >
                 <div class="dropdown-menu m-0">
                   <a href="https://web.facebook.com/comsci.sskru" class="dropdown-item" target="_blank">facebook</a>
-                  <a href="https://web.facebook.com/profile.php?id=100093434096057" class="dropdown-item">facebook meme</a>
-                  <a href="" class="dropdown-item"
-                    >tik tok</a>
-                  
+                  <a href="https://web.facebook.com/profile.php?id=100093434096057" class="dropdown-item" target="_blank">facebook meme</a>
+                  <a href="https://www.tiktok.com/@comsciencesskru?_t=8pX9SFoJowC&_r=1" class="dropdown-item" target="_blank">tik tok</a>
                 </div>
               </div>
               <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="https://web.facebook.com/comsci.sskru" class="btn btn-primary py-2 px-4" target="_blank">Facebook</a>
+            <a href="https://www.oass.sskru.ac.th/std.sskru/s1.html?fbclid=IwAR2S1BxOZNeff9TkRAGmhRp3tchZbF61JbWnWK73VlBNTO4Z4aZnYzwc4lw" class="btn btn-primary py-2 px-4" target="_blank">สมัครเรียน</a>
           </div>
         </nav>
 
@@ -142,14 +140,14 @@
                   <img
                     class="img-fluid rounded w-100 wow zoomIn"
                     data-wow-delay="0.1s"
-                    src="{% static 'img/about-1.jpg' %}"
+                    src="{% static 'img/about-1.1.jpg' %}"
                   />
                 </div>
                 <div class="col-6 text-start">
                   <img
                     class="img-fluid rounded w-75 wow zoomIn"
                     data-wow-delay="0.3s"
-                    src="{% static "img/about-2.jpg" %}"
+                    src="{% static "img/about-2.2.jpg" %}"
                     style="margin-top: 25%"
                   />
                 </div>
@@ -157,14 +155,14 @@
                   <img
                     class="img-fluid rounded w-75 wow zoomIn"
                     data-wow-delay="0.5s"
-                    src="{% static "img/about-3.jpg" %}"
+                    src="{% static "img/about-3.3.jpg" %}"
                   />
                 </div>
                 <div class="col-6 text-end">
                   <img
                     class="img-fluid rounded w-100 wow zoomIn"
                     data-wow-delay="0.7s"
-                    src="{% static "img/about-4.jpg" %}"
+                    src="{% static "img/about-4.4.jpg" %}"
                   />
                 </div>
               </div>
@@ -176,19 +174,23 @@
                 About Us
               </h5>
               <h1 class="mb-4">
-                Welcome to
-                <i class="fa fa-utensils text-primary me-2"></i>Computer Science
+                ยินดีต้อนรับสู่
+                <img src="{% static 'img/โลโก้สาขา.png' %}" alt="Restoran Logo" style="width: 40px; height: auto; vertical-align: middle;" />
+              </i>สาขาวิชาวิทยาการคอมพิวเตอร์
               </h1>
               </h1>
               <p class="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet
-                lorem sit.
+                สาขาวิทยาการคอมพิวเตอร์ของมหาวิทยาลัยราชภัฏศรีสะเกษ (ศรีสะเกษ) ก่อตั้งขึ้นเพื่อให้การศึกษาด้านเทคโนโลยีสารสนเทศและการคอมพิวเตอร์ในระดับปริญญาตรี โดยมีวัตถุประสงค์เพื่อพัฒนาบุคลากรที่มีความรู้และทักษะในสาขาดังกล่าวให้กับภาคอีสาน
               </p>
               <p class="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo magna dolore erat amet
+                สามารถกู้ กยศ. ได้ 100%,
+                เรียนอยู่ที่บ้านเราเอง/ไกล้บ้าน,
+                ไม่ตกเทรนด์ ข่าวสารเทคโนโลยี,
+                งานที่มีอนาคตด้านเทคโนโลยีสูง,
+                จบแล้วมีงานทำแน่นอน,
+                รายได้ที่มั่นคง,
+                ความหลากหลายของอาชีพ,
+                มีความเป็นอิสระในการทำงาน,
               </p>
               <div class="row g-4 mb-4">
                 <div class="col-sm-6">
@@ -199,32 +201,16 @@
                       class="flex-shrink-0 display-5 text-primary mb-0"
                       data-toggle="counter-up"
                     >
-                      15
+                      27
                     </h1>
                     <div class="ps-4">
-                      <p class="mb-0">Years of</p>
-                      <h6 class="text-uppercase mb-0">Experience</h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div
-                    class="d-flex align-items-center border-start border-5 border-primary px-3"
-                  >
-                    <h1
-                      class="flex-shrink-0 display-5 text-primary mb-0"
-                      data-toggle="counter-up"
-                    >
-                      50
-                    </h1>
-                    <div class="ps-4">
-                      <p class="mb-0">Popular</p>
-                      <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                      <p class="mb-0">ปีการศึกษา</p>
+                      <h6 class="text-uppercase mb-0">school year</h6>
                     </div>
                   </div>
                 </div>
               </div>
-              <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+              <a class="btn btn-primary py-3 px-5 mt-2" href="https://comsci-sskru.web.app/?fbclid=IwY2xjawFMowNleHRuA2FlbQIxMAABHUHNVoH8bXdGaxMec9bATDIQJ7jtq0LmGPeFCd6psymhbgvt6LCq-8g1eg_aem_04FpR2cSD1y2i9RzKuAOcw">ดูเพิ่มเติม</a>
             </div>
           </div>
         </div>
@@ -235,23 +221,18 @@
       <div class="container-xxl pt-5 pb-3">
         <div class="container">
           <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h5
-              class="section-title ff-secondary text-center text-primary fw-normal"
-            >
-              Team Members
-            </h5>
-            <h1 class="mb-5">Our Master Chefs</h1>
+            <h1 class="mb-5">Development team</h1>
           </div>
           <div class="row g-4">
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item text-center rounded overflow-hidden">
-                <div class="rounded-circle overflow-hidden m-4">
-                  <img class="img-fluid" src="{% static "img/team-1.jpg" %}" alt="" />
+                <div class="team-item text-center rounded overflow-hidden">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="{% static 'img/team-1.1.jpg' %}" alt="" />
                 </div>
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+                <h5 class="mb-0">Phisan Sookkhee</h5>
+                <small>Project Manager</small>
                 <div class="d-flex justify-content-center mt-3">
-                  <a class="btn btn-square btn-primary mx-1" href=""
+                  <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/numvarn?locale=th_TH"
                     ><i class="fab fa-facebook-f"></i
                   ></a>
                   <a class="btn btn-square btn-primary mx-1" href=""
@@ -266,12 +247,12 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div class="team-item text-center rounded overflow-hidden">
                 <div class="rounded-circle overflow-hidden m-4">
-                  <img class="img-fluid" src="{% static "img/team-2.jpg" %}" alt="" />
+                  <img class="img-fluid" src="{% static 'img/jab-2.jpg' %}" alt="" />
                 </div>
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+                <h5 class="mb-0">Katawut Phongrasri</h5>
+                <small>Senior Programmer</small>
                 <div class="d-flex justify-content-center mt-3">
-                  <a class="btn btn-square btn-primary mx-1" href=""
+                  <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/profile.php?id=100021534462600&locale=th_TH"
                     ><i class="fab fa-facebook-f"></i
                   ></a>
                   <a class="btn btn-square btn-primary mx-1" href=""
@@ -286,12 +267,12 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div class="team-item text-center rounded overflow-hidden">
                 <div class="rounded-circle overflow-hidden m-4">
-                  <img class="img-fluid" src="{% static "img/team-3.jpg" %}" alt="" />
+                  <img class="img-fluid" src="{% static 'img/big-1.jpg' %}" alt="" />
                 </div>
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+                <h5 class="mb-0">Korawi Jumjan</h5>
+                <small>Front-end Developer</small>
                 <div class="d-flex justify-content-center mt-3">
-                  <a class="btn btn-square btn-primary mx-1" href=""
+                  <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/korawi.jumjan.9?locale=th_TH"
                     ><i class="fab fa-facebook-f"></i
                   ></a>
                   <a class="btn btn-square btn-primary mx-1" href=""
@@ -306,12 +287,12 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
               <div class="team-item text-center rounded overflow-hidden">
                 <div class="rounded-circle overflow-hidden m-4">
-                  <img class="img-fluid" src="{% static "img/team-4.jpg" %}" alt="" />
+                  <img class="img-fluid" src="{% static 'img/ge-1.jpg' %}" alt="" />
                 </div>
-                <h5 class="mb-0">Full Name</h5>
-                <small>Designation</small>
+                <h5 class="mb-0">Sompong Yaikham</h5>
+                <small>Software Tester</small>
                 <div class="d-flex justify-content-center mt-3">
-                  <a class="btn btn-square btn-primary mx-1" href=""
+                  <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/profile.php?id=100009227361978&mibextid=ZbWKwL"
                     ><i class="fab fa-facebook-f"></i
                   ></a>
                   <a class="btn btn-square btn-primary mx-1" href=""
@@ -341,11 +322,9 @@
               >
                 Company
               </h4>
-              <a class="btn btn-link" href="">About Us</a>
-              <a class="btn btn-link" href="">Contact Us</a>
-              <a class="btn btn-link" href="">Reservation</a>
-              <a class="btn btn-link" href="">Privacy Policy</a>
-              <a class="btn btn-link" href="">Terms & Condition</a>
+              <a class="btn btn-link" href="https://web.facebook.com/comsci.sskru"target="_blank">เกี่ยวกับ</a>
+              <a class="btn btn-link" href="">ติดต่อ</a>
+              <a class="btn btn-link" href="https://www.oass.sskru.ac.th/std.sskru/s1.html"target="_blank">การจอง</a>
             </div>
             <div class="col-lg-3 col-md-6">
               <h4
@@ -354,28 +333,28 @@
                 Contact
               </h4>
               <p class="mb-2">
-                <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York,
-                USA
+                <i class="fa fa-map-marker-alt me-3"></i>-319 ถนน ไทยพันทา ตำบล โพธิ์ อำเภอเมืองศรีสะเกษ ศรีสะเกษ,
+                
               </p>
               <p class="mb-2">
-                <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+                <i class="fa fa-phone-alt me-3"></i>084 298 2456
               </p>
               <p class="mb-2">
-                <i class="fa fa-envelope me-3"></i>info@example.com
+                <i class="fa fa-envelope me-3"></i>phisan.s@sskru.ac.th
               </p>
               <div class="d-flex pt-2">
-                <a class="btn btn-outline-light btn-social" href=""
+                <!-- <a class="btn btn-outline-light btn-social" href=""
                   ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="btn btn-outline-light btn-social" href=""
+                ></a> -->
+                <!-- <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/numvarn"
                   ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="btn btn-outline-light btn-social" href=""
+                ></a> -->
+                <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@PhisanSookkheeSSKRU"target="_blank"
                   ><i class="fab fa-youtube"></i
                 ></a>
-                <a class="btn btn-outline-light btn-social" href=""
+                <!-- <a class="btn btn-outline-light btn-social" href=""
                   ><i class="fab fa-linkedin-in"></i
-                ></a>
+                ></a> -->
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -384,10 +363,9 @@
               >
                 Opening
               </h4>
-              <h5 class="text-light fw-normal">Monday - Saturday</h5>
-              <p>09AM - 09PM</p>
-              <h5 class="text-light fw-normal">Sunday</h5>
-              <p>10AM - 08PM</p>
+              <h5 class="text-light fw-normal">จันทร์ - ศุกร์</h5>
+              <p>08:00 น. - 14:00น.</p>
+              <h5 class="text-light fw-normal"></h5>
             </div>
             <div class="col-lg-3 col-md-6">
               <h4
@@ -395,7 +373,7 @@
               >
                 Newsletter
               </h4>
-              <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+              <!-- <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p> -->
               <div class="position-relative mx-auto" style="max-width: 400px">
                 <input
                   class="form-control border-primary w-100 py-3 ps-4 pe-5"
@@ -416,28 +394,13 @@
           <div class="copyright">
             <div class="row">
               <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
-                Right Reserved.
-
-                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                Designed By
-                <a class="border-bottom" href="https://htmlcodex.com"
-                  >HTML Codex</a
-                ><br /><br />
-                Distributed By
-                <a
-                  class="border-bottom"
-                  href="https://themewagon.com"
-                  target="_blank"
-                  >ThemeWagon</a
-                >
               </div>
               <div class="col-md-6 text-center text-md-end">
                 <div class="footer-menu">
-                  <a href="">Home</a>
+                  <!-- <a href="">Home</a>
                   <a href="">Cookies</a>
                   <a href="">Help</a>
-                  <a href="">FQAs</a>
+                  <a href="">FQAs</a> -->
                 </div>
               </div>
             </div>
