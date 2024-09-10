@@ -152,9 +152,7 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('https://scontent.fbkk22-5.fna.fbcdn.net/v/t39.30808-6/450054923_863881429118803_2906487664665253319_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHpWTMZSfmjidWj30csuBcCqsedekKzGdyqx516QrMZ3JNTLFTMoXkuQO_oQoPxNL7o4EREct5LQIQrn7VsglIz&_nc_ohc=felSLiGZfE0Q7kNvgFtiojw&_nc_zt=23&_nc_ht=scontent.fbkk22-5.fna&oh=00_AYA9iCV3UhoICAwCRsZoCPWbh1qU_za-2XPzJPP5ZS8TCQ&oe=66DD21C8') no-repeat center center;
     background-size: cover;
 }
 
